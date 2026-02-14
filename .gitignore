@@ -1,6 +1,16 @@
+# Virtual environment
 venv/
+
+# Python cache
 __pycache__/
 *.pyc
+
+# Environment variables
 .env
+
+# Frontend artifacts
 node_modules/
 dist/
+
+# Runtime uploads
+backend/uploads/
