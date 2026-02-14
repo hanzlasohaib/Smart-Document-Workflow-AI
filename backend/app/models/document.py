@@ -7,10 +7,17 @@ class Document(Base):
     __tablename__ = "documents"
 
     id = Column(Integer, primary_key=True, index=True)
-    user_id = Column(Integer, ForeignKey("users.id"))
-    file_name = Column(String, nullable=False)
+
+    user_id = Column(Integer, ForeignKey("users.id"), nullable=False)
+
+    original_filename = Column(String, nullable=False)
+    stored_filename = Column(String, nullable=False)
+    file_path = Column(String, nullable=False)
+
     upload_date = Column(DateTime, default=datetime.utcnow)
+
     status = Column(String, default="uploaded")
     document_type = Column(String, nullable=True)
 
-    user = relationship("User", backref="documents")
+    user = relationship("User", back_populates="documents")
+

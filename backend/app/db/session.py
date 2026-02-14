@@ -11,6 +11,7 @@ SessionLocal = sessionmaker(
 )
 
 from app.db.base import Base
-from app.models import user  # 👈 This registers the User model
+import app.db.models  # noqa: F401
+
 
 Base.metadata.create_all(bind=engine)

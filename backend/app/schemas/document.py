@@ -4,10 +4,10 @@ from typing import Optional
 
 class DocumentOut(BaseModel):
     id: int
-    file_name: str
+    original_filename: str
     upload_date: datetime
     status: str
     document_type: Optional[str]
 
     class Config:
-        orm_mode = True
+        from_attributes = True  # Pydantic v2

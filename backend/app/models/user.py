@@ -1,4 +1,5 @@
 from sqlalchemy import Column, Integer, String, Boolean
+from sqlalchemy.orm import relationship
 from app.db.base import Base
 
 class User(Base):
@@ -10,3 +11,5 @@ class User(Base):
     hashed_password = Column(String, nullable=False)  # renamed for consistency
     role = Column(String, default="user")  # "user" or "admin"
     is_active = Column(Boolean, default=True)
+
+    documents = relationship("Document", back_populates="user", cascade="all, delete")
