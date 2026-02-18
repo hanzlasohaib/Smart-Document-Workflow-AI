@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String, ForeignKey, DateTime
+from sqlalchemy import Column, Integer, String, ForeignKey, DateTime, Text
 from sqlalchemy.orm import relationship
 from datetime import datetime
 from app.db.base import Base
@@ -16,8 +16,10 @@ class Document(Base):
 
     upload_date = Column(DateTime, default=datetime.utcnow)
 
-    status = Column(String, default="uploaded")
+    status = Column(String, default="uploaded", nullable=False)
     document_type = Column(String, nullable=True)
+
+    raw_text = Column(Text, nullable=True)
 
     user = relationship("User", back_populates="documents")
 
