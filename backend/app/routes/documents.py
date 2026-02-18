@@ -1,25 +1,30 @@
 import os
 import uuid
-from fastapi import APIRouter, HTTPException, UploadFile, File, Depends
+from fastapi import APIRouter, HTTPException, UploadFile, File, Depends, BackgroundTasks
 from sqlalchemy.orm import Session
 from typing import List
 
 from app.db.deps import get_db
+from app.db.session import SessionLocal
 from app.models.document import Document
 from app.models.user import User
 from app.schemas.document import DocumentOut
 from app.core.security import get_current_user
+from app.core.config import settings
+from app.services.ocr_service import process_document
+from app.services.ocr_service import extract_text_from_file
 
 router = APIRouter(prefix="/documents", tags=["Documents"])
 
-UPLOAD_DIR = "uploads"
 
-if not os.path.exists(UPLOAD_DIR):
-    os.makedirs(UPLOAD_DIR)
+UPLOAD_DIR = settings.UPLOAD_DIR
+
+os.makedirs(UPLOAD_DIR, exist_ok=True)
 
 
 @router.post("/upload", response_model=DocumentOut)
 def upload_document(
+    background_tasks: BackgroundTasks,
     file: UploadFile = File(...),
     db: Session = Depends(get_db),
     current_user: User = Depends(get_current_user)
@@ -44,6 +49,7 @@ def upload_document(
     db.add(new_document)
     db.commit()
     db.refresh(new_document)
+    background_tasks.add_task(process_document, new_document.id)
 
     return new_document
 

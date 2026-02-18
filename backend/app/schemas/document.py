@@ -8,6 +8,7 @@ class DocumentOut(BaseModel):
     upload_date: datetime
     status: str
     document_type: Optional[str]
+    raw_text: Optional[str]
 
     class Config:
         from_attributes = True  # Pydantic v2
