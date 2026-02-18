@@ -43,7 +43,6 @@ def extract_text_from_file(file_path: str) -> str:
 
     text_output = ""
 
-    poppler_path = r"D:\SOFTWARES\poppler-25.12.0\Library\bin"
 
     # If PDF → convert pages to images
     if file_path.lower().endswith(".pdf"):

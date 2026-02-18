@@ -10,6 +10,9 @@ class Settings(BaseSettings):
     # 🗄 Database
     DATABASE_URL: str
 
+    # 📁 File Upload
+    UPLOAD_DIR: str
+
     class Config:
         env_file = ".env"
         extra = "ignore"  # prevents crash if extra env vars exist
