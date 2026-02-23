@@ -8,6 +8,7 @@ class DocumentOut(BaseModel):
     upload_date: datetime
     status: str
     document_type: Optional[str]
+    confidence_score: Optional[float]
     raw_text: Optional[str]
 
     class Config:

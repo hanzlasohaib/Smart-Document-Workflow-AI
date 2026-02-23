@@ -4,6 +4,7 @@ from pdf2image import convert_from_path
 
 from app.db.session import SessionLocal
 from app.models.document import Document
+from app.services.classification_service import classify_text
 
 
 def process_document(document_id: int):
@@ -24,6 +25,9 @@ def process_document(document_id: int):
         extracted_text = extract_text_from_file(document.file_path)
 
         document.raw_text = extracted_text
+        doc_type, confidence = classify_text(extracted_text)
+        document.document_type = doc_type
+        document.confidence_score = confidence
         document.status = "processed"
         db.commit()
 

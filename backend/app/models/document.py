@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String, ForeignKey, DateTime, Text
+from sqlalchemy import Column, Integer, Float, String, ForeignKey, DateTime, Text
 from sqlalchemy.orm import relationship
 from datetime import datetime
 from app.db.base import Base
@@ -18,6 +18,7 @@ class Document(Base):
 
     status = Column(String, default="uploaded", nullable=False)
     document_type = Column(String, nullable=True)
+    confidence_score = Column(Float, nullable=True)
 
     raw_text = Column(Text, nullable=True)
 
