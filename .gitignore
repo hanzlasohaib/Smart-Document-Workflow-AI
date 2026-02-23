@@ -14,3 +14,6 @@ dist/
 
 # Runtime uploads
 backend/uploads/
+
+# Current Folder Structure
+current.txt

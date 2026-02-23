@@ -1,0 +1,91 @@
+text,label
+"Invoice number INV-1001, billing date 12 Jan 2024, total amount due 4500 USD, payment terms net 30 days",Invoice
+"Invoice ID 2024-002, supplier ABC Traders, subtotal 3000, tax 300, grand total 3300 USD",Invoice
+"Tax invoice number 4456, issue date 05 Feb 2024, amount payable 7800 USD",Invoice
+"Commercial invoice for order 8899, quantity 50 units, unit price 25 USD, total 1250 USD",Invoice
+"Invoice reference 7788, client XYZ Ltd, VAT included, total payable 910 USD",Invoice
+"Billing statement invoice 3001, due date 20 March 2024, balance 1500 USD",Invoice
+"Invoice number 9921, service charges 2000 USD, tax 10 percent, total 2200 USD",Invoice
+"Invoice dated 01 April 2024, purchase order 5544, net amount 640 USD",Invoice
+"Sales invoice 8080, payment due within 15 days, total amount 5200 USD",Invoice
+"Invoice for consulting services, hours billed 40, rate 100 USD per hour, total 4000 USD",Invoice
+"Proforma invoice 5678, shipment cost 300 USD, total payable 2300 USD",Invoice
+"Invoice number 2345, billing address New York, subtotal 1500 USD, tax 150 USD",Invoice
+"Invoice 7777 issued to client, item description laptop, quantity 2, total 2000 USD",Invoice
+"Retail invoice 1112, cashier ID 22, total 340 USD, payment by card",Invoice
+"Invoice reference 9988, due date 30 May 2024, outstanding balance 890 USD",Invoice
+"Monthly invoice April 2024, subscription fee 99 USD, tax included",Invoice
+"Invoice number 4521, freight charges 120 USD, total payable 2120 USD",Invoice
+"Invoice ID 6003, supplier code 12A, amount due 760 USD",Invoice
+"Purchase invoice 8432, billing cycle March 2024, total amount 1800 USD",Invoice
+"Invoice number 3200, payment terms net 45 days, total 5400 USD",Invoice
+"Invoice 6543, issued on 11 June 2024, grand total 990 USD",Invoice
+"Invoice statement 7811, tax 5 percent, total payable 420 USD",Invoice
+"Service invoice 4433, client ID 90, total 2300 USD",Invoice
+"Invoice number 9087, order ID 554, subtotal 2100 USD",Invoice
+"Invoice dated 22 July 2024, VAT 15 percent, total 15000 USD",Invoice
+"Invoice 3009, billing period May 2024, amount due 670 USD",Invoice
+"Invoice number 4001, item description printer, total 850 USD",Invoice
+"Invoice reference 5050, total amount including tax 4300 USD",Invoice
+"Invoice issued to company ABC Corp, payable 7100 USD",Invoice
+"Invoice 9900, due upon receipt, total balance 1230 USD",Invoice
+"Curriculum vitae of John Doe, software engineer with 5 years experience in backend development and Python",Resume
+"Resume of Sarah Khan, education Bachelor of Computer Science, skills Java and Spring Boot",Resume
+"Professional resume for Ali Ahmed, experience in data analysis and machine learning",Resume
+"CV of Maria Smith, work experience at Tech Solutions as frontend developer",Resume
+Resume profile includes project management skills and MBA degree,Resume
+Curriculum vitae showing experience in accounting and financial reporting,Resume
+"Resume summary, skilled in React, Node.js and cloud computing",Resume
+Professional experience includes 3 years as network administrator,Resume
+Resume document listing certifications AWS and Azure fundamentals,Resume
+"CV with education details, Bachelor of Engineering and internship experience",Resume
+Resume highlights strong communication skills and teamwork,Resume
+"Curriculum vitae including personal details, employment history and references",Resume
+Resume for graphic designer with portfolio and creative projects,Resume
+Professional resume detailing experience in cybersecurity,Resume
+CV outlining research experience and published papers,Resume
+Resume includes objective statement and technical skills section,Resume
+Curriculum vitae of project coordinator with 4 years experience,Resume
+Resume showing leadership roles and volunteer experience,Resume
+"CV listing programming languages Python, JavaScript and C++",Resume
+Resume document with achievements and awards section,Resume
+Curriculum vitae including contact information and LinkedIn profile,Resume
+Resume summary with expertise in database management,Resume
+Professional resume describing internship at multinational company,Resume
+CV mentioning thesis work and academic projects,Resume
+"Resume showing skills in Docker, Kubernetes and DevOps tools",Resume
+Curriculum vitae with experience in digital marketing,Resume
+Resume document detailing customer service experience,Resume
+CV including references available upon request,Resume
+Professional resume for HR specialist with recruitment experience,Resume
+Resume describing education history and work background,Resume
+"Application form for university admission, applicant name and date of birth",Form
+"Registration form including address, phone number and signature",Form
+Employee onboarding form requiring personal information and ID details,Form
+"Application form for job position, candidate name and contact details",Form
+Medical consent form with patient signature and date,Form
+Loan application form requesting financial details,Form
+Survey form including questionnaire and responses,Form
+Government application form for passport renewal,Form
+Admission form with guardian information and academic history,Form
+Membership registration form with email and password fields,Form
+Online application form for scholarship program,Form
+Feedback form including rating scale and comments,Form
+Insurance claim form with policy number and claim amount,Form
+Event registration form including participant details,Form
+Internship application form with resume attachment field,Form
+Subscription form requiring billing information,Form
+Complaint form including description of issue,Form
+Tax filing form with income and deduction details,Form
+Volunteer registration form including availability schedule,Form
+Application form for bank account opening,Form
+Enrollment form with student ID and course selection,Form
+Medical history form including allergies and medications,Form
+Customer information form with address and phone,Form
+Application form for driving license,Form
+Request form for leave approval,Form
+Evaluation form with performance rating fields,Form
+Sign up form requiring username and password,Form
+Background verification form with employment history,Form
+Application form including declaration and signature section,Form
+Profile update form with personal details and preferences,Form
